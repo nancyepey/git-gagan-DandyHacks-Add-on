@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live & Love - Motivation</title>
+    <link href="css/motivate.css" rel="stylesheet"/>
+    <script src="quotes.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="back">
+            <h2><a href="index.php">HOME</a></h2>
+        </div>
+        
+    </div>
+    <h1>Quotes to Lighthen your day</h1>
+    <div class="cardContainer" id="cardContainer">
+        <div class="card" style="background-color:rgb(153, 29, 224);">
+            <h2>First card</h2>
+            <p>Some text</p>
+        </div>
+        <!-- <div class="card" style="background-color:rgb(12, 126, 120);">
+        <h2>Second card</h2>
+        <p>Some text</p>
+        </div>
+        <div class="card" style="background-color:rgb(207, 41, 91);">
+        <h2>Third card</h2>
+        <p>Some text</p>
+        </div>
+        <div class="card" style="background-color:rgb(204, 91, 39);">
+        <h2>Fourth card</h2>
+        <p>Some text</p> -->
+        </div>
+    </div>
+    </body>
+    <script>
+        
+function generateHTML(results) {
+
+// const to have all the html
+let generatedHTML = '';
+
+results.forEach(arr => {
+     //console.log(arr);
+     //genreated html
+     generatedHTML += 
+     `
+     <div class="card" style="background-color:rgb(153, 29, 224);">
+         <h2>${arr.text}</h2>
+         <p>${arr.author}</p>
+     </div>
+     `
+    });
+
+//appending the generated html to the div search result
+console.log(document.querySelector('.cardContainer'));
+document.querySelector('.cardContainer').innerHTML = generatedHTML;
+}
+
+    </script>
+</html>

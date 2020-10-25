@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("css/Background.jpg");
+  height: 100%;
+  background-size: cover;
+}
+
+.nav {
+  float: right;
+  margin-top: 30px;
+  margin-right: 20px;
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  padding: 5px 20px;
+  font-size: 25px;
+  color: red;
+  text-decoration: none;
+  font-family: "Merriweather Sans";
+  border: lightblue groove 1px;
+  border-radius: 10px;
+  margin-right: 7px;
+  background-color: pink;
+}
+a:hover {
+  background-color: skyblue;
+  color: black;
+}
